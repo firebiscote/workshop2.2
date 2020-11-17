@@ -5,9 +5,11 @@
 class Vehicule {
 public:
 	Vehicule();
-	virtual void sePresenter();
+	virtual void sePresenter(std::string presentation);
+	std::string get_presentation();
 	int get_prix();
 private:
+	std::string _presentation;
 	int _prix;
 };
 

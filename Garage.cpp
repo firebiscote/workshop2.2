@@ -6,7 +6,7 @@ Garage::Garage(int taille) {
 
 void Garage::ajouterVehicule(Vehicule* nouveau) {
 	for (int i = 0; i < _garage.size(); i++) {
-		if (_garage[i] != NULL) {
+		if (_garage[i] == NULL) {
 			_garage[i] = nouveau;
 			break;
 		}

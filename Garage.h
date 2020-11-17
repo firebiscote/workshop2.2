@@ -2,6 +2,7 @@
 
 #include "Vehicule.h"
 #include <vector>
+#include <iostream>
 
 class Garage {
 public:
