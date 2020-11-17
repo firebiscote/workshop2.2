@@ -4,6 +4,12 @@ Garage::Garage(int taille) {
 	_garage.resize(taille);
 }
 
+Garage::~Garage() {
+	for (int i = 0; i < _garage.size(); i++) {
+		delete _garage[i];
+	}
+}
+
 void Garage::ajouterVehicule(Vehicule* nouveau) {
 	for (int i = 0; i < _garage.size(); i++) {
 		if (_garage[i] == NULL) {

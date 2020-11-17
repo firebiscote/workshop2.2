@@ -7,6 +7,7 @@
 class Garage {
 public:
 	Garage(int taille);
+	~Garage();
 	void ajouterVehicule(Vehicule* nouveau);
 	void ajouterVehicule(Vehicule* nouveau, int index);
 	void action();

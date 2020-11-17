@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Vehicule::Vehicule(string presentation) : _presentation(presentation), _prix(0) {
+Vehicule::Vehicule(string presentation) : _presentation(presentation) {
 }
 
 void Vehicule::sePresenter() {
@@ -17,11 +17,7 @@ void Vehicule::set_presentation(string presentation) {
 	_presentation = presentation;
 }
 
-int Vehicule::get_prix() {
-	return _prix;
-}
-
-Voiture::Voiture(string presentation) : Vehicule(presentation), _nbRoue(4) {
+Voiture::Voiture(string presentation) : Vehicule(presentation) {
 }
 
 void Voiture::sePresenter() {
